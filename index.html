@@ -7,7 +7,26 @@
     <link type="text/css" rel="stylesheet" href="./js/vendor/select2/select2.css" />
     <link type="text/css" rel="stylesheet" href="./css/main.css?910b5efc" />
     <link type="text/css" rel="stylesheet" href="./css/vendor/bootstrap.css" />
-    <link type="text/css" rel="stylesheet" href="./css/pe-extras.css" />
+    <meta name="pe-build" content="5e23b535bf" />
+    <script>
+        // GitHub Pages lets browsers keep this page for 10 minutes: when a newer build is out, reload once
+        (function () {
+            if (!window.fetch) return;
+            fetch(location.pathname + '?build-check=' + Date.now(), {cache: 'no-store'})
+                .then(function (r) { return r.text(); })
+                .then(function (t) {
+                    var m = t.match(/name="pe-build" content="(\w+)"/);
+                    if (!m || m[1] === '5e23b535bf') return;
+                    try {
+                        if (sessionStorage.getItem('pe-build-reload') === m[1]) return;
+                        sessionStorage.setItem('pe-build-reload', m[1]);
+                    } catch (e) {}
+                    location.reload();
+                })
+                .catch(function () {});
+        })();
+    </script>
+    <link type="text/css" rel="stylesheet" href="./css/pe-extras.css?v=e920704acb" />
     <script>
         (function () {
             var t = null;
@@ -1570,7 +1589,7 @@
     <script type="text/javascript" src="./calc/stats.js?a9e37d1a"></script>
     <script type="text/javascript" src="./calc/data/species.js?a7085116"></script>
 	 <script type="text/javascript" src="./js/data/sets/gen9.js?f0983174"></script>
-    <script type="text/javascript" src="./js/data/sets/pe-trainers.js"></script>
+    <script type="text/javascript" src="./js/data/sets/pe-trainers.js?v=f47bb6f275"></script>
     <script type="text/javascript" src="./js/data/sets/gen7.js?f7ec6e60"></script>
     <script type="text/javascript" src="./js/data/sets/gen6.js?02c8b303"></script>
     <script type="text/javascript" src="./js/data/sets/gen5.js?c7c35313"></script>
@@ -1602,7 +1621,7 @@
     <script type="text/javascript" src="./js/shared_controls.js?7e8240cd"></script>
     <script type="text/javascript" src="./js/index_randoms_controls.js?87d3bda8"></script>
     <script type="text/javascript" src="./js/moveset_import.js?b09106ef"></script>
-    <script type="text/javascript" src="./js/pe-extras.js"></script>
+    <script type="text/javascript" src="./js/pe-extras.js?v=6b6181ef2f"></script>
 </div>
 
 <div class="credits">Base calculator created by Honko, maintained by Austin and Kris. Adapted by Joggel.
