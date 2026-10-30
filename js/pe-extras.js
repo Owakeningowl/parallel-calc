@@ -29,7 +29,9 @@
 
 	function paintToggle() {
 		var dark = root.classList.contains('pe-dark');
-		toggle.textContent = dark ? 'Light mode' : 'Dark mode';
+		toggle.querySelector('.theme-pill-icon').textContent = dark ? '\u2600' : '\u263E';
+		toggle.querySelector('.theme-pill-text').textContent = dark ? 'Light mode' : 'Dark mode';
+		toggle.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
 		toggle.setAttribute('aria-pressed', dark ? 'true' : 'false');
 	}
 	toggle.addEventListener('click', function (e) {
